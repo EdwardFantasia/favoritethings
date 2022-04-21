@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../ShapeUp/styles/normalize.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/imagegallery.css">
+	<link rel ="icon" href="../Cage the Elephant/images/logo.png">
+	<title>Cage the Elephant Image Gallery</title>
+	<!--SlickNav-->
+	<link rel="stylesheet" href = "../styles/slicknav.css">
+	<!---jQuery CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!---local js-->
+	<script src="../js/jquery.slicknav.min.js"></script>
+	
+	<!---slickNav script-->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+		</script>
+
+</head>
+
+<body>
+	<header class = "clearfix">
+		<a href = "index.html"><img
+		id= "logoimage"
+		src="images/galleryimages/headerimg.webp" alt="Return to homepage" title = "Return to homepage"></a>
+		<a href = "index.html"><h2 alt = "Return to homepage" title = "Return to homepage">Cage the Elephant Images</h2></a>
+	</header>
+
+	<nav class="navbar navbar-expand-sm bg-black navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagegallery.html">Images</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videogallery.html">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">Games Slideshow</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+	<!---slickNav navtags-->
+<main>
+	<h3>Image Gallery</h3>
+	<!-- Photo Grid -->
+	<div class="row"> 
+		<div class="column">
+			<img src="images/galleryimages/1.jpg" >
+			<img src="images/galleryimages/3.jpg" >
+			<img src="images/galleryimages/5.jpg" >
+			<img src="images/galleryimages/7.jpg" >
+			<img src="images/galleryimages/9.jpg" >
+		</div>
+		
+		<div class="column">
+			<img src="images/galleryimages/2.jpg" >
+			<img src="images/galleryimages/4.jpg" >
+			<img src="images/galleryimages/6.jpg" >
+			<img src="images/galleryimages/8.jpg" >
+			<img src="images/galleryimages/10.jpg" >
+		</div> 
+		
+		<div class="column">
+			<img src="images/galleryimages/11.jpg" >
+			<img src="images/galleryimages/13.jpg" >
+			<img src="images/galleryimages/15.jpg" >
+			<img src="images/galleryimages/17.jpg" >
+			<img src="images/galleryimages/19.jpg" >
+		</div>
+		
+		<div class="column">
+			<img src="images/galleryimages/12.jpg" >
+			<img src="images/galleryimages/14.jpg" >
+			<img src="images/galleryimages/16.jpg" >
+			<img src="images/galleryimages/18.jpg" >
+			<img src="images/galleryimages/20.jpg" >
+		</div>
+	</div>
+</main>
+  
+	<!-- JavaScript - Get Current Year for Footer -->
+	<script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+	<footer>
+		<p>&copy; <span id = "copyright"></span> Cage the Elephant Image Gallery</p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
